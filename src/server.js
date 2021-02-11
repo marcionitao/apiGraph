@@ -1,5 +1,5 @@
 const express = require('express')
-const graphqlHTTP = require('express-graphql')
+const { graphqlHTTP } = require('express-graphql')
 const { buildSchema } = require('graphql')
 const schema = require('./api/schema')
 
@@ -9,4 +9,4 @@ app.use('/api', graphqlHTTP({
   graphiql: true
 }))
 
-app.listen(4000, () => console.log('Executando...'))
+app.listen(4000, () => console.log('Executando in http://localhost:4000/api'))

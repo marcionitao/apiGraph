@@ -14,7 +14,7 @@ const typeDefs = `
     getUsers: [User]
   }
 
-  type UserInput {
+  input UserInput {
     id: ID
     name: String!
     email: String!
@@ -26,4 +26,4 @@ const typeDefs = `
   }
 `
 
-modoule.exports = makeExecutableSchema({ typeDefs, resolvers})
+module.exports = makeExecutableSchema({ typeDefs, resolvers})
