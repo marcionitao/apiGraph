@@ -14,6 +14,6 @@ module.exports = knex
 })*/
 
 // pesquisando
-knex('users').then(result => {
+/*knex('users').then(result => {
   console.log(result)
-})
+})*/
